@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-const baseURL = process.env.API_BASE_URL || 'http://localhost:3333'
-
-const api = axios.create({ baseURL })
+const api = axios.create({ baseURL: 'https://be-hero-api.herokuapp.com/' })
 
 export default api
